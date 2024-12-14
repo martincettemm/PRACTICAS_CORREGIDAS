@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #f9f9f9, #e0f7fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+a {
+    position: absolute;
+    left: 10px;
+    padding: 8px 12px;
+    background: #0078ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background: #0056b3;
+}
+
+.principal {
+    top: 10px;
+}
+.anterior {
+    top: 50px;
+}
+.siguiente {
+    top: 90px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.panel-izquierdo, .panel-derecho {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-izquierdo {
+    background: linear-gradient(to bottom, #0078ff, #004aad);
+    color: white;
+}
+
+.panel-izquierdo form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel-izquierdo label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-izquierdo input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.panel-izquierdo button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #ffca28;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.panel-izquierdo button:hover {
+    background: #ffa000;
+}
+
+.pantalla img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 3px solid white;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-derecho {
+    background: linear-gradient(to bottom, #ffca28, #ff8f00);
+    color: black;
+}
+
+.pantalla-informacion {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.pantalla-informacion dl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pantalla-informacion dt {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pantalla-informacion dd {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#mensaje-error {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
